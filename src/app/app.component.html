@@ -1,16 +1,46 @@
 <html>
   <head>
-      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
       <style>
-        .description {
-          color: red;
-          font-family: 'Anton';
+        @font-face {
+          src: url(../assets/fonts/Anton-Regular.ttf);
+          font-family: 'Anton-Regular';
+          font-weight: normal;
         }
-      </style>
+        .nativo {
+          color: red;
+          font-family: 'Verdana';
+        }
+        .google {
+          color: red;
+          font-family: 'Anton-Regular';
+        }
+      </style> 
   </head>
   <body>
-    <div id="content" #content class="description">Teste</div>
-
+    <div id="content" #content>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+      <div class="nativo">Teste fonte dentro do html nativo!</div>
+      <div class="google">Teste fonte dentro do html do google</div>
+    </div>
     <div role="banner">
       <button (click)="printsimplePDF()">Download</button>
     </div>
